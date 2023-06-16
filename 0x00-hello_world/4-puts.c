@@ -10,5 +10,5 @@ int main(void)
 	/*now executing the puts*/
 	puts(string_name);
 	/*return*/
-      	return(0);
+	return (0);
 }
