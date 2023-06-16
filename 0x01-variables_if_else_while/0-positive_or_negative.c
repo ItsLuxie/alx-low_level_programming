@@ -3,14 +3,17 @@
 #include<stdio.h>
 /*
  * more headers goes there
-* betty style doc for function main goes there
+*betty style doc for function main goes there
+ * main - Entry point
+ *
+ * Description: 'the program's description'
+ * parameter: describe the parameter
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
+/* creating the random number*/
 {
-/*
- * creating the random number
- * return (0) on success
- */
 	int n;
 
 	srand(time(0));
