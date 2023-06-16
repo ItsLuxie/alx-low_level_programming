@@ -1,13 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
-#include<stdio.h>
-/*
- * main - Entry point
- *
- * Description: 'the program's description'
- * parameter: describe the parameter
- *
- * Return: Always 0 (Success)
+#include <stdio.h>
+#include <string.h>
+/**
+ * main - Entry
+ * Return: returns 0
  */
 int main(void)
 /* creating the random number*/
