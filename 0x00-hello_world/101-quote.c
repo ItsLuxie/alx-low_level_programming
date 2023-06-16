@@ -11,10 +11,10 @@ int main(void)
 	int count = 0;
 
 			while (count < (int) strlen(str))
-						{
-							putchar(str[count]);
-							count++;								}
-	putchar('\n');
+							{
+								putchar(str[count]);
+								count++;				}
+			putchar('\n');
 
 	return (1);
 }
