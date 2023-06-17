@@ -13,7 +13,7 @@ int main (void)
 
 	while (alpha <= 'z')
 	{
-		if (alpha = 'z')
+		if (alpha == 'z')
 		{
 			while (alphab <= 'Z')
 			{
