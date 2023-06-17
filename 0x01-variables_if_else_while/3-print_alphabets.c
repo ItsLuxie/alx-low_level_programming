@@ -8,11 +8,12 @@
 int main(void)
 {
 	char alpha, alphab;
+	
 	alpha = 'a';
 
 	alphab = 'A';
 
-	while (alpha <= 'z')
+	while (alpha < 'z')
 	{
 		if (alpha == 'z')
 		{
@@ -22,9 +23,11 @@ int main(void)
 				alphab++;
 			}
 		}
-		++alpha;
 		putchar(alpha);
+
+		alpha++;
 	}
 	putchar('\n');
+
 	return (0);
 }
