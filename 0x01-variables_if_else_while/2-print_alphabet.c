@@ -9,10 +9,11 @@ int main(void)
 	char alphabet = 'a';
 	while (alphabet <= 'z')
     {
-        // print the value of the variable
+        /* print the value of the variable*/
         putchar(alphabet);
 
-        // increment the variable 
+        /* increment the variable*/
+	 
         alphabet++;
     }
 
