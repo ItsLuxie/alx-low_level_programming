@@ -5,10 +5,11 @@
  *   *
  *    * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	char alpha, alphab;
 	alpha = 'a';
+
 	alphab = 'A';
 
 	while (alpha <= 'z')
@@ -21,7 +22,7 @@ int main (void)
 				alphab++;
 			}
 		}
-		alpha++;
+		++alpha;
 		putchar(alpha);
 	}
 	putchar('\n');
