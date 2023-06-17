@@ -15,18 +15,16 @@ int main(void)
 
 	while (alpha <= 'z')
 	{
-		if (alpha <= 'z')
-		{
-			while (alphab <= 'Z')
-			{
-				putchar(alphab);
-				alphab++;
-			}
-		}
 		putchar(alpha);
 
 		alpha++;
 	}
+		while (alphab <= 'Z')
+		{
+				putchar(alphab);
+				alphab++;
+		}
+		
 	putchar('\n');
 
 	return (0);
