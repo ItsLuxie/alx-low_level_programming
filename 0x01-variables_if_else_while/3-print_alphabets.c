@@ -19,12 +19,12 @@ int main(void)
 
 		alpha++;
 	}
-		while (alphab <= 'Z')
-		{
-				putchar(alphab);
-				alphab++;
-		}
+	while (alphab <= 'Z')
+	{
+		putchar(alphab);
 		
+		alphab++;
+	}
 	putchar('\n');
 
 	return (0);
