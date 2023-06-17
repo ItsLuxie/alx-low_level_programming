@@ -6,19 +6,12 @@
  */
 int main(void)
 {
-	char alph = 'a';
-
-	while (alph <= 'z')
+	char alph;
+	for (alph = 'a'; alph <= 'z'; alph++)
 	{
-		if (alph == 'q' || alph == 'e')
-		{
-			continue;
+		if (alph != 'e' && alph != 'q'){
+			putchar(alph);
 		}
-		putchar(alph);
-
-		alph++;
-
-	}
 	putchar('\n');
 	return (0);
 }
