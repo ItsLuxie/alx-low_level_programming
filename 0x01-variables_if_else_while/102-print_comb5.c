@@ -8,16 +8,17 @@
 int main(void)
 {
 	int x, y;
-/*
-*x and y are the two digits forming the combo
-*/
-	for (x = 0; x <= 9; x++)
+
+	for (x = 0; x <= 99; x++)
 	{
-		for (y = 0; y <= 9; y++)
+		for (y = x + 1; y <= 99; y++)
 		{
-			putchar(x + '0');
-			putchar(y + '0');
-			if (x < 9 || y < 9)
+			putchar((x / 10) + '0');
+			putchar((y % 10) + '0');
+			putchar(' ');
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
+			if (i < 98 || j < 99)
 			{
 				putchar(',');
 				putchar(' ');
