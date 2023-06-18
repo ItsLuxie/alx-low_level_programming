@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- *  * main - Entry point
- *  *program printing two digit combo 
+ *main - Entry point
+ *program printing two digit combo 
  *i is first while j is second digit
  *Return: Always 0
  */
