@@ -2,28 +2,27 @@
 
 /**
  *  * main - Entry point
- *  *program printing two digit combo
- *    * Return: Always 0 (Success)
+ *  *program printing two digit combo 
+ *  i is first while j is second digit
  */
 int main(void)
 {
-	int n1, n2;
-/*n1 is the first digit, n2 os tgw second one*/
-	for (n1 = 0; n1 < 9; n1++)
-	{
-		for (n2 = 1; n2 < 10; n2++)
-		{
-			if (n1 != n2)
-			{
-				putchar(n1 + '0');
-				putchar(n2 + '0');
-			}
-			putchar(',');
-			putchar(' ');
-		}
-	}
+    int i, j;
 
-	putchar('\n');
+    for (i = 0; i <= 9; i++)
+    {
+        for (j = i + 1; j <= 9; j++)
+        {
+            putchar(i + '0');
+            putchar(j + '0');
 
-	return (0);
+            if (i < 8 || j < 9)
+            {
+            putchar(',');
+            putchar(' ');
+            }
+        }
+    }
+    putchar('\n');
+    return (0);
 }
