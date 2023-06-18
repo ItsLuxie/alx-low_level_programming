@@ -16,9 +16,9 @@ int main(void)
 			putchar((x / 10) + '0');
 			putchar((y % 10) + '0');
 			putchar(' ');
-			putchar((j / 10) + '0');
-			putchar((j % 10) + '0');
-			if (i < 98 || j < 99)
+			putchar((x / 10) + '0');
+			putchar((y % 10) + '0');
+			if (x < 98 || y < 99)
 			{
 				putchar(',');
 				putchar(' ');
