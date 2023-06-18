@@ -3,7 +3,7 @@
 /**
  *  * main - Entry point
  *  *program printing two digit combo 
- *  i is first while j is second digit
+ *i is first while j is second digit
  *Return: Always 0
  */
 int main(void)
@@ -16,7 +16,6 @@ int main(void)
 		{
 			putchar(i + '0');
 			putchar(j + '0');
-			
 			if (i < 8 || j < 9)
 			{
 				putchar(',');
