@@ -9,25 +9,22 @@ int main(void)
 {
 	int x, y;
 
-	for (x = 0; x <= 99; x++)
+	for (x = 0; x < 100; x++)
 	{
-		for (y = 0; y <= 99; y++)
+		for (y = 0; y < 100; y++)
 		{
-			putchar((x / 10) + '0');
-			putchar((y / 10) + '0');
-			putchar(' ');
-		}
-	}
-	for (x = 0; x <= 99; x++)
-	{
-		for (y = x + 1; y <= 99; y++)
-		{
-			putchar((x / 10) + '0');
-			putchar((y / 10) + '0');
-			if (x < 98 || y < 99)
+			if (x < y)
 			{
-				putchar(',');
+				putchar((x / 10) + '0');
+				putchar((y % 10) + '0');
 				putchar(' ');
+				putchar((x / 10) + '0');
+				putchar((y % 10) + '0');
+				if (x != 98 || y != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
