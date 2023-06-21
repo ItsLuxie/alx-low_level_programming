@@ -8,5 +8,8 @@
  */
 int add(int x, int y)
 {
-	return (add(x + y));
+	int sum;
+
+	sum = x + y;
+	return (sum);
 }
