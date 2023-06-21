@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * print_last_d/igit - return last digit
+ * print_last_digit - return last digit
  * @n: number
  *
  * Return: last digit
@@ -12,10 +12,11 @@ int print_last_digit(int n)
 {
 	int last;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
+	if (n < 0)
+		n = -n;
 	last = n % 10;
+	if (last < 0)
+		last = -last;
 
 	_putchar('0' + last);
 	return (last);
