@@ -6,17 +6,15 @@
  *
  * Return: Always 0.
  */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 void print_alphabet(void)
 {
-	int ch;
+	char alph = 'a';
 
-	ch = 97;
-
-	if (ch >= 97 && ch <= 122)
-		printf ("%c", ch);
+	while (alph <= 'z')
+	{
+		putchar(alph);
+		alph++;
+	}
+	putchar('\n');
+	return (0);
 }
