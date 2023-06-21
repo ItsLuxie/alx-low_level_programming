@@ -9,6 +9,8 @@ void print_alphabet_x10(void)
 
 	for (; count <= 10; count++)
 	{
+		char alph = 'a';
+
 		while (alph <= 'z')
 		{
 			_putchar(alph);
