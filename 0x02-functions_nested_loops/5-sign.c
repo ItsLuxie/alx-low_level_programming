@@ -2,7 +2,8 @@
 #include "main.h"
 /**
  * print_sign -checks signs i.e - when negative + when positive and 0 when zero
- * Return :0, 1 and -1
+ * @n: number
+ * Return: always a number
  */
 int print_sign(int n)
 {
