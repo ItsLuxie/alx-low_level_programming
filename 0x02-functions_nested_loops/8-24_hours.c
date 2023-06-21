@@ -6,14 +6,18 @@
  */
 void jack_bauer(void)
 {
-	int i, j, k, l;
+	int i, j, k, l, highest;
 
 	for (i = 0; i <= 2; i++)
 	{
 		if (i == 2)
-			int highest = 3;
+		{
+			highest = 3;
+		}
 		else
+		{
 			highest = 9;
+		}
 		for (j = 0; j <= highest; j++)
 		{
 			for (k = 0; k <= 5; k++)
