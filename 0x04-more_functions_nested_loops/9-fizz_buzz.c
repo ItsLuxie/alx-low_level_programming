@@ -3,8 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: prints numbers 1 to 100, prints Fizz for multiples of 3,prints Buzz for multiples of 5and FizzBuzz for multiples of both 5 & 3
- *
+ * Description: prints numbers 1 to 100, prints Fizz for multiples of 3,prints Buzz for multiples of 5 and FizzBuzz for multiples of both 5 & 3
  * Return: Always 0 (Success)
 */
 
@@ -28,7 +27,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", i);
+			printf("%d ", i);
 		}
 	}
 	printf("\n");
