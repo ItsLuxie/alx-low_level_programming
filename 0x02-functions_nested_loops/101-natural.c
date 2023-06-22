@@ -15,6 +15,6 @@ int main(void)
 		{
 			sum = sum + n;
 		}
-		return (sum);
 	}
+	return (sum);
 }
