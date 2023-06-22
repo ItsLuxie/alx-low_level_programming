@@ -13,13 +13,14 @@ int main(void)
 
 	long int first = 1, second = 2;
 	long int next = first + second;
+
 	printf("%lu, ", first);
 	printf("%lu, ", second);
 	while (count <= 50)
 	{
 		if (count == 50)
 		{
-			printf("%lu \n", next);
+			printf("%lu\n", next);
 		}
 		else
 		{
