@@ -2,7 +2,7 @@
 /**
  * more_numbers - Entry point
  *
- * Description: prints 1 to 14 10 times
+ * Description: prints 1 to 14, 10 times
  *
  * Return: void
  */
@@ -18,6 +18,6 @@ void more_numbers(void)
 				_putchar(i / 10+ 48);
 			_putchar(i % 10 + 48);
 		}
+		_putchar(10);
 	}
-	_putchar(10);
 }
