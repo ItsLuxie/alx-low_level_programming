@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_numbers - print numbers
+ * print_numbers - Entry point
  *
  * Description: prints number 0 to 9
  *
- * Return: Always a number
+ * Return: void
  */
 void print_numbers(void)
 {
@@ -12,8 +12,8 @@ void print_numbers(void)
 
 	if (i >= 0 && i <= 9)
 	{
-		_putchar(i + '0');
+		_putchar(i + 48);
 		i++;
 	}
-	_putchar('\n');
+	_putchar(10);
 }
