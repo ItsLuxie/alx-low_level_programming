@@ -1,7 +1,8 @@
 #include  <stdio.h>
 /**
+ * main - Entry point
  * multiples of 3 and 5
- *Return: always a number
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -17,5 +18,5 @@ int main(void)
 			printf("%d", sum);
 		}
 	}
-	return (sum);
+	return (0);
 }
