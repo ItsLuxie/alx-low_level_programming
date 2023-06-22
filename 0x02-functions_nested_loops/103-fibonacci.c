@@ -17,7 +17,7 @@ int main(void)
 
 	for (i = 1; i <= 33; ++i)
 	{
-		if (second < 4000000 && (second % 2) == 0)
+		if (first <= 4000000 && (first % 2) == 0)
 		{
 			sum = sum + first;
 		}
