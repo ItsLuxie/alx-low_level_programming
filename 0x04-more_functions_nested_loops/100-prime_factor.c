@@ -9,15 +9,12 @@
 int main(void)
 {
 	int i, r;
-
 	long int n = 612852475143;
-
 	i = 0;
 
 	while (n != 0)
 	{
 		r = n % 10;
-
 		n = n / 10;
 
 		if (r == 2 || r == 3 || r == 5 || r == 7)
