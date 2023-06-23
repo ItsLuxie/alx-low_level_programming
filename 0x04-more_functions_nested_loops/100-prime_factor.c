@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	int n = 612852475143;
-
 	int i, r;
+
+	long int n = 612852475143;
 
 	i = 0;
 
@@ -24,8 +24,10 @@ int main(void)
 		{
 			if (r > i)
 				i = r;
-			else
+			else if (r == 7)
 				printf( "%d\n", i);
+				break;
 		}
 	}
+	return (0);
 }
