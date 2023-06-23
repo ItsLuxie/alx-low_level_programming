@@ -23,10 +23,15 @@ int main(void)
 		if (r == 2 || r == 3 || r == 5 || r == 7)
 		{
 			if (r > i)
+			{
 				i = r;
-			else if (r == 7)
-				printf( "%d\n", i);
-				break;
+
+				if (r == 7)
+				{
+					printf( "%d\n", i);
+					break;
+				}
+			}
 		}
 	}
 	return (0);
