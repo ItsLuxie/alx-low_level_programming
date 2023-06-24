@@ -3,7 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: prints numbers 1 to 100, prints Fizz for multiples of 3 prints Buzz for multiples of 5 and FizzBuzz for multiples of both 5 & 3
+ * Description: prints numbers 1 to 10
+ * prints fizzbuzz
  *
  * Return: Always 0 (Success)
 */
