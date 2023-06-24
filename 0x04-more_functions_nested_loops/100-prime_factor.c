@@ -10,11 +10,12 @@ int main(void)
 {
 	unsigned long int i, n = 612852475143;
 
-	for (i = 3; i < 782849; i += 2)
+	for (i = 2; i <= n; i++)
 	{
-		while ((n % i == 0) && (n != i))
+		if (n % i == 0)
 		{
-			n /= i;
+			n = n / 10;
+			i--;
 		}
 	}
 	printf("%lu\n", n);
