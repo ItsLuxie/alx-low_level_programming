@@ -8,28 +8,16 @@
  */
 int main(void)
 {
-	int i, r;
-	long int n = 612852475143;
-	i = 0;
+	unsigned long int i, n = 612852475143;
 
-	while (n != 0)
+	for (i = 3; i < 782849; i += 2)
 	{
-		r = n % 10;
-		n = n / 10;
-
-		if (r == 2 || r == 3 || r == 5 || r == 7)
+		while ((number % i == 0) && (number != i))
 		{
-			if (r > i)
-			{
-				i = r;
-
-				if (r == 7)
-				{
-					printf( "%d\n", i);
-					break;
-				}
-			}
+			number /= i;
 		}
 	}
+	printf("%lu\n", number);
+
 	return (0);
 }
