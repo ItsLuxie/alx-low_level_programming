@@ -12,12 +12,12 @@ int main(void)
 
 	for (i = 3; i < 782849; i += 2)
 	{
-		while ((number % i == 0) && (number != i))
+		while ((n % i == 0) && (n != i))
 		{
-			number /= i;
+			n /= i;
 		}
 	}
-	printf("%lu\n", number);
+	printf("%lu\n", n);
 
 	return (0);
 }
