@@ -15,7 +15,7 @@ int _atoi(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		num = num * 10 + (s[i] - 48);
+		printf("%d\n", num);
 	}
-	printf("%d\n", num);
-	return 0;
+	return (0);
 }
