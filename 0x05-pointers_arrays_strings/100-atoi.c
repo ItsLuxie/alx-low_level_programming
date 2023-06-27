@@ -8,14 +8,25 @@
  */
 int _atoi(char *s)
 {
-	int num = 0;
+	unsigned int j = 0;
+	int i = 0;
+	int n = 1;
 
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i] != '\n')
 	{
-		num = num * 10 + (s[i] - 48);
-		printf("%d\n", num);
+		if (s[i] == '-')
+		{
+			n *= -1;
+		}
+		else if (s[i] >= '0' && s[i] <= '9')
+		{
+			j = j * 10 + (s[i] - 48);
+		}
+
+		if (j > 0 && !(s[i] >= '0' && s[i] <= '9'))
+			break;
+		i++;
 	}
-	return (0);
+
+	return (j * n);
 }
