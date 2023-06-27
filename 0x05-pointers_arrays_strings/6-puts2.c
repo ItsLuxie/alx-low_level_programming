@@ -6,14 +6,11 @@
  */
 void puts2(char *str)
 {
-	int i;
-
-	char s[] = "";
+	unsigned int i;
 
 	for(i = 0; i < strlen(str); i+=2)
 	{
 		_putchar(str[i]);
-
-		s[i/2]=str[i];
 	}
+	_putchar('\n');
 }
