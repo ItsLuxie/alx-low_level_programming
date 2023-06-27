@@ -6,8 +6,11 @@
  */
 void _puts(char *str)
 {
-	str[MAX];
+	unsigned int ch;
 
-	_putchar(str[MAX]);
+	for (ch = 0; ch < strlen(str); ch++)
+	{
+		_putchar(str[ch]);
+	}
 	_putchar('\n');
 }
