@@ -8,8 +8,14 @@
  */
 int _atoi(char *s)
 {
-	int n = int atoi(s);
+	int num = 0;
 
-	printf("%d\n", n);
-	return (0);
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		num = num * 10 + (s[i] - 48);
+	}
+	printf("%d\n", num);
+	return 0;
 }
