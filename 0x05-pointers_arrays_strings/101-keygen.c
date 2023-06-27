@@ -15,7 +15,7 @@ int main(void)
 
 	while (i <= 2646)
 	{
-		cra = (rand() % 127) + 1;
+		pass = (rand() % 127) + 1;
 		write(1, &pass, 1);
 		i = i + pass;
 	}
