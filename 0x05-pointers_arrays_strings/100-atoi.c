@@ -8,8 +8,8 @@
  */
 int _atoi(char *s)
 {
-	int atoi(s);
+	int n = int atoi(s);
 
-	printf("%d\n", s);
+	printf("%d\n", n);
 	return (0);
 }
