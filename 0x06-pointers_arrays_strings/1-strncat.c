@@ -1,6 +1,4 @@
 #include "main.h"
-#include <string.h>
-
 /**
  * *_strncat - copiesn numberofwordsin a string
  * @dest: string to be copied to
