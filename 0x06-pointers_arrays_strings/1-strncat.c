@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * *_strncat - copies specific number of words in a string
+ * *_strncat - copiesn numberofwordsin a string
  * @dest: string to be copied to
  * @src: string to be ammended
  * @n: size of string to be copied
