@@ -2,14 +2,25 @@
 #include <stdio.h>
 /**
  * rot13 - encoding system
- * @n: letters to be encoded
+ * @s: letters to be encoded
  * Return: letters
  */
-char *rot13(char *n)
+char *rot13(char *s)
 {
-	if (n >= 'a' && n <= 'z')
+	int i, j;
+	char m = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+	char n[] = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
+
+	for (i = 0; s[i] != 0; i++)
 	{
-		n = n + '13';
-		_putchar(n);
+		for (j = 0; s[j] != 0; j++)
+		{
+			if (s[i] == m[j])
+			{
+				s[i] = n[j];
+				break;
+			}
+		}
 	}
+	return (s);
 }
