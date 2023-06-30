@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * rot13 - encoding system
  * @s: letters to be encoded
