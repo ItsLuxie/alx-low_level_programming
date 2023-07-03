@@ -8,10 +8,10 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	size_t len1 = strlen(s);
-	size_t len2 = strlen(accept);
-	size_t prefix_len = 0;
-	size_t i, j;
+	unsigned int len1 = strlen(s);
+	unsigned int len2 = strlen(accept);
+	unsigned int prefix_len = 0;
+	unsigned int i, j;
 
 	for (i = 0; i < len1; i++)
 	{
