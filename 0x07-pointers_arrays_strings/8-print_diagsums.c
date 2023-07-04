@@ -5,6 +5,7 @@
  * print_diagsums - prints the sum of dianals
  * @a: string
  * @size: size of string
+ * Return: void
  */
 void print_diagsums(int *a, int size)
 {
