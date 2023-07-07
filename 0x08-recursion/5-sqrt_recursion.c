@@ -5,13 +5,13 @@
  * @c: func arg 2
  * Return: int
  */
-int sqrt(int n, int c)
+int sr(int n, int c)
 {
 	if ((c * c) == n)
 		return (c);
 	if (c > n)
 		return (-1);
-	return (sqrt(n, c + 1));
+	return (sr(n, c + 1));
 }
 /**
  * _sqrt_recursion - squareroot
@@ -26,5 +26,5 @@ int _sqrt_recursion(int n)
 		i = 1;
 	else
 		i = 2;
-	return (sqrt(n, i));
+	return (sr(n, i));
 }
