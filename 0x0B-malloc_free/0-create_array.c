@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * create_array - creation of array
  * @size: size of array
@@ -7,5 +9,30 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	return (0);
+	char *charArr;
+	unsigned int i;
+
+	if (size == 0)
+	{
+		return (NULL);
+	}
+	else
+	{
+		charArr = (char *)malloc(size * sizeof(char));
+
+		if (charArr == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			for (i  = 0; i < size; i++)
+			{
+				charArr[i] = c;
+			}
+			charArr[size] = '\0';
+		}
+		return (charArr);
+	}
+}
 }
