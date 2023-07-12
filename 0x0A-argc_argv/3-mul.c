@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - entry point with arguments
+ * @argc: argumemt count
+ * @argv: argument vector
+ * Return: 0
+ */
+int main(int argc, char *argv[])
+{
+	int mult;
+	int j = atoi(argv[1]);
+	int k = atoi(argv[2]);
+
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	mult = j * k;
+
+	printf("%d\n", mult);
+	return (0);
+}
