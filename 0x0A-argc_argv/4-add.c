@@ -19,20 +19,19 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		j = atoi(argv[1]);
-		k = atoi(argv[2]);
-
-		if (!(isdigit(j) || isdigit(k)))
+		for (j = 1; j < argc; j++)
 		{
-			printf("Error\n");
-			return (1);
+			for (k = 0; argv[j][k] != '\0'; k++)
+			{
+				if (!isdigit(argv[j][k]))
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+			i += atoi(argv[j]);
 		}
-		else
-		{
-			i = j + k;
-
 			printf("%d\n", i);
-			return (0);
-		}
 	}
+			return (0);
 }
