@@ -10,14 +10,13 @@ char *_strdup(char *str)
 {
 	int i = 0;
 	int x;
+	char *s;
 
 	while (str[i] != 0)
 	{
-		str++;
+		i++;
 	}
-	char *s;
-	
-	s = void malloc((i * sizeof(char)) + 1);
+	s = (void)malloc((i * sizeof(char)) + 1);
 
 	if (s == NULL)
 	{
@@ -28,7 +27,7 @@ char *_strdup(char *str)
 		s[x] = str[x];
 	}
 	s[x] = 0;
-	
+
 	return (s);
 
 	return (0);
