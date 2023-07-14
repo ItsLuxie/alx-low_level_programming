@@ -18,7 +18,7 @@ char *argstostr(int ac, char **av)
 
 	ptr = malloc(count * sizeof(char));
 	if (ptr == NULL)
-		print("Failed\n");
+		printf("Failed\n");
 	for (i = 0, k = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != 0; j++)
