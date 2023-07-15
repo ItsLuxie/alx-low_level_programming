@@ -1,21 +1,21 @@
 #include  "main.h"
 #include <stdlib.h>
 /**
- * array_range - creates array of integers with min and max
+ * array_range - creates array of int min&max
  * @min: minimum value
  * @max: maximum value
  * Return: null if min is greater than max
  */
 int *array_range(int min, int max)
 {
-	index = 0;
-	int index;
+	int index = 0;
+	int x;
 	int *ptr;
 
 	if (min > max)
 		return (NULL);
 
-	random = ((max + 1) - min);
+	x = ((max + 1) - min);
 
 	ptr = malloc(x * sizeof(int));
 
