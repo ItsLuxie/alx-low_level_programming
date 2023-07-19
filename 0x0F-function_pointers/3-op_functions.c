@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "3-calc.h"
 /**
  * op_add - adds teo numbers
  * @a: first no
