@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 	int i;
 	int flag;
 	char *str;
-	va_list (all);
+	va_list all;
 
 	va_start(all, format);
 	i = 0;
