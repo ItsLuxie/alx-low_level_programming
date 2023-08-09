@@ -10,7 +10,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i, j = 0;
-	char *str, *st;
+	char *str = malloc(sizeof(*str));
+	char *st = malloc(sizeof(*st));
 
 	s1 = str;
 	s2 = st;
@@ -29,5 +30,7 @@ char *str_concat(char *s1, char *s2)
 		s2++;
 		j++;
 	}
+	free(str);
+	free(st);
 	return (str);
 }
