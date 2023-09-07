@@ -11,8 +11,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *firstNode, *lastNode;
 
-	if (n == NULL)
-		return (NULL);
 	firstNode = malloc(sizeof(listint_t));
 
 	if (firstNode == NULL)
