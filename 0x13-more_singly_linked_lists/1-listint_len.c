@@ -6,7 +6,7 @@
 * @h: list to print
 * Return: number of nodes in the list
 **/
-size_t print_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	size_t noofnodes;
 
