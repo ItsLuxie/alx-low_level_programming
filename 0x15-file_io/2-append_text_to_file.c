@@ -29,7 +29,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 
 	size = _strlen(text_content);
-	wfile = write(fd, text_content, size);
+	wfile = write(file, text_content, size);
 
 	if (wfile == -1)
 	{
@@ -49,7 +49,7 @@ int append_text_to_file(const char *filename, char *text_content)
  */
 int _strlen(const char *s)
 {
-	int i = 0;
+	int no = 0;
 
 	while (*(s + no) != '\0')
 	{
